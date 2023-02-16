@@ -1,7 +1,34 @@
-fun main(args: Array<String>) {
-    println("Hello World!")
+fun main() {
+schlname("akirachix")
+var n=introduction("Micah",20)
+    println(n)
+    println(title("Best"))
+word("James")
 
-    // Try adding program arguments via Run/Debug configuration.
-    // Learn more about running applications: https://www.jetbrains.com/help/idea/running-applications.html.
-    println("Program arguments: ${args.joinToString()}")
+}
+fun schlname (name:String){
+    val orgname = "akirachix"
+println(orgname[0]+ ""+ orgname[2]+ orgname[3])
+
+}
+fun introduction (name:String, age:Int): String{
+
+    var sentence= ("Hi my name is $name and I am $age years old")
+    return sentence
+
+
+}
+fun title(heading:String):String {
+    return ("The length of the heading string is:"+heading.length)
+
+}
+fun word (called:String){
+    var firstname = "James"
+    if(called==firstname){
+       println("That`s me!")
+    }
+    else { println("I don`t know who that is")
+
+    }
+
 }
